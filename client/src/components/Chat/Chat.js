@@ -24,7 +24,7 @@ const Chat = () => {
         setRoom(room);
 
         socket.emit('join', {name, room}, () => {
-
+            
         });
 
         return () => {
